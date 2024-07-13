@@ -337,6 +337,7 @@ footer{
     display: flex;
     transition: 0.5s ease ;
     cursor: pointer;
+    position: relative;
 }
 
 .hover_img>img{
@@ -347,4 +348,19 @@ footer{
 
 .hover_img:hover{
     width: 500px;
+}
+
+.hover_title{
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    display: none;
+}
+
+.hover_img:hover .hover_title{
+    display: flex;
 }
